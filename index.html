@@ -5,193 +5,201 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aryan Kashyap Naveen</title>
   <meta name="description" content="MS Computer Science student at NYU Courant working on world models, representation learning, and generative models.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#fff;--on:#0a0a0a;--var:#666;--line:#d9d9d9}
+    *{box-sizing:border-box;border-radius:0}
+    body{margin:0;background:var(--bg);color:var(--on);font:400 16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+    main{max-width:760px;margin:0 auto;padding:64px 20px 56px}
+    a{color:var(--on);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
+    a:hover{text-decoration-color:var(--on)}
+    h1,h2,h3{font-weight:600;letter-spacing:-.02em;margin:0}
+
+    /* intro */
+    .hero{display:flex;gap:32px;align-items:flex-start;justify-content:space-between;margin-bottom:36px}
+    .hero h1{font-size:clamp(32px,6vw,46px);line-height:1.08;margin-bottom:8px}
+    .sub{color:var(--var);font-size:17px;margin:0 0 18px}
+    .photo{width:160px;height:160px;object-fit:cover;display:block;flex:none}
+    .btn{display:inline-block;padding:7px 14px;border:1px solid var(--on);text-decoration:none;font-size:14px;font-weight:500;background:var(--on);color:var(--bg)}
+    .btn:hover{background:var(--bg);color:var(--on)}
+    .btn.ghost{background:transparent;color:var(--on);border-color:var(--line)}
+    .btn.ghost:hover{border-color:var(--on)}
+    .btn.off{background:transparent;color:var(--var);border:1px dashed var(--line);cursor:default}
+    .btn.sm{padding:3px 10px;font-size:13px}
+    .btns{display:flex;flex-wrap:wrap;gap:8px}
+    @media(max-width:600px){.hero{flex-direction:column-reverse}.photo{width:120px;height:120px}}
+
+    p{margin:0 0 14px}
+    .about p:last-child{margin:0}
+    h2.sec{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--var);font-weight:500;margin:44px 0 18px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+
+    /* news */
+    .tl{margin:0;padding:0;list-style:none}
+    .item{display:grid;grid-template-columns:110px 1fr;gap:4px 20px;padding:18px 0;border-bottom:1px solid var(--line)}
+    .item:last-child{border-bottom:0}
+    .when{font-size:13px;color:var(--var);padding-top:3px}
+    .when b{display:block;font-weight:500;font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
+    .item.pub .when b{color:var(--on)}
+    .item h3{font-size:17px;line-height:1.35;margin-bottom:6px}
+    .item p{color:var(--var);font-size:15px;margin:0 0 8px}
+    .item p b{color:var(--on);font-weight:500}
+    .links{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+    @media(max-width:600px){.item{grid-template-columns:1fr}.when{padding:0}.when b{display:inline;margin-left:8px}}
+
+    figure{margin:0}
+    figure img{width:100%;height:auto;display:block;border:1px solid var(--line)}
+    figcaption{margin-top:10px;color:var(--var);font-size:14px}
+    footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--var);font-size:13px}
+  </style>
 </head>
 <body>
+<main>
 
-<!-- ===================== ABOUT ===================== -->
+  <!-- ===================== ABOUT ===================== -->
+  <div class="hero">
+    <div>
+      <h1>Aryan Kashyap Naveen</h1>
+      <p class="sub">MS in Computer Science, NYU Courant</p>
+      <div class="btns">
+        <a class="btn" href="mailto:aryankashyapnaveen@gmail.com">aryankashyapnaveen@gmail.com</a>
+        <span class="btn off" title="Link coming soon">CV · link TBA</span>
+      </div>
+    </div>
+    <img class="photo" src="profile_photo.jpg" alt="Aryan Kashyap Naveen" width="160" height="160">
+  </div>
 
-<img src="profile_photo.jpg" alt="Aryan Kashyap Naveen" width="200" height="200" align="right" style="border-radius: 50%; margin-left: 20px;">
-<hr>
+  <div class="about">
+    <p>
+      Im currently a masters student at NYU. My research interests are in computer vision and representation learning. My research at NYU's CILVR Lab is on world models for planning. I study how machines can learn compact representations of the world and then use them to plan.
+    </p>
+    <p>
+      Prior to this I was a student at NITK Surathkal, India where I graduated with a Bachelor of Technology in Artificial Intelligence. At NITK my thesis was on self-supervised pretraining for geospatial FMs. In the past I have done EEG signal analysis for patients with neurodegenerative diseases at IISC Bangalore.
+    </p>
+    <p>
+      Outside of research I love pumping weights and have a 90KG bench press PR. I also have 12K trophies on Clash Royale and a super cool minecraft base (proof at the bottom of the site).
+    </p>
+  </div>
 
-<h1>Aryan Kashyap Naveen</h1>
-<p>MS in Computer Science, NYU Courant</p>
+  <!-- ===================== TIMELINE ===================== -->
+  <h2 class="sec">News</h2>
+  <ol class="tl">
 
-<hr>
+    <li class="item">
+      <div class="when"><time datetime="2026-10">Oct 2026</time><b>Update</b></div>
+      <div>
+        <h3>NSF travel award for ACM SIGSPATIAL 2026</h3>
+        <p>I'll be attending ACM SIGSPATIAL 2026 at Riverside, CA to present my work on GeoFM pre-training.</p>
+      </div>
+    </li>
 
+    <li class="item">
+      <div class="when"><time datetime="2026-09">Sep 2026</time><b>Update</b></div>
+      <div>
+        <h3>Started MS in CS at NYU Courant</h3>
+        <p>I'm continuing my research on world models for latent planning at CILVR lab NYU. More specifically, I'm working on world models that predict in latent space and on regularization that keeps long planning rollouts reliable for model predictive control.</p>
+      </div>
+    </li>
 
-<p>
-  Im currently a masters student at NYU. My research interests are in computer vision and representation learning. My research at NYU's CILVR Lab is on world models for planning. I study how machines can learn compact representations of the world and then use them to plan.
-</p>
-<p>
-  Prior to this I was a student at NITK Surathkal, India where I graduated with a Bachelor of Technology in Artificial Intelligence. At NITK my thesis was on self-supervised pretraining for geospatial FMs. In the past I have done EEG signal analysis for patients with neurodegenerative diseases at IISC Bangalore.
-</p>
+    <li class="item pub">
+      <div class="when"><time datetime="2026-05">May 2026</time><b>Publication</b></div>
+      <div>
+        <h3>Paper accepted to ACM SIGSPATIAL 2026 (Research Track)!</h3>
+        <p>Our final year thesis "A Composition Aware Pretraining Framework for Geospatial Foundation Models" was accepted for publication. We built a pretraining framework for geospatial foundation models with a training objective that reconstructs the compositional makeup of satellite imagery (unlike other SOTA GeoFMs that are trained as masked autoencoders).</p>
+        <p><b>Aryan Kashyap Naveen</b>, Abhishek Srinivas, Pranav Moothedath, Shrutilipi Bhattacharjee.</p>
+        <div class="links"><a class="btn ghost sm" href="https://arxiv.org/abs/2608.30817">arXiv</a><a class="btn ghost sm" href="https://github.com/05kashyap/GFM_Composition_Pretraining">Code</a></div>
+      </div>
+    </li>
 
-<p>
-  Outside of research I love pumping weights and have a 90KG bench press PR. I also have 12K trophies on Clash Royale and a super cool minecraft base (proof at the bottom of the site).
-</p>
+    <li class="item">
+      <div class="when"><time datetime="2026-05">May 2026</time><b>Update</b></div>
+      <div><h3>I graduated from NITK Surathkal, India!!!</h3></div>
+    </li>
 
-<p>Contact me at aryankashyapnaveen@gmail.com</p>
-<p>My full CV can be found here: (link TBA...)</p>
+    <li class="item">
+      <div class="when"><time datetime="2026-01">Jan 2026</time><b>Update</b></div>
+      <div>
+        <h3>IndiaAI Fellowship</h3>
+        <p>I was awarded funding to build a satellite image object search tool and geospatial FM. Project Title: "Fast and Efficient Satellite Image Search for Diverse Landcover Settings".</p>
+      </div>
+    </li>
 
-<!-- <p>
-  <b>Coursework:</b> Machine Learning, Deep Learning, Computer Vision, Data Mining, Data Science, Probability and Statistics,
-  Applied Linear Algebra, Discrete Mathematics, Analysis of Algorithms, Parallel Programming, Computer Networks, Operating Systems.
-</p> -->
-<!-- <p>British citizen, authorized to work in the UK.</p> -->
-<p>
-  <!-- <a href="https://github.com/05kashyap">GitHub</a> | -->
-  <!-- <a href="https://www.linkedin.com/in/">LinkedIn</a> -->
-</p>
+    <li class="item pub">
+      <div class="when"><time datetime="2025-12">Dec 2025</time><b>Publication</b></div>
+      <div>
+        <h3>Paper presented at ICVGIP 2025</h3>
+        <p>Is the Spatial Structure as Important as Temporal Structure in EEG Signals?</p>
+        <p><b>Aryan Kashyap Naveen</b>, Gopika Gopan K, Neelam Sinha. 16th Indian Conference on Computer Vision, Graphics and Image Processing, IIT Mandi. Poster at AAIC 2026.</p>
+        <div class="links"><a class="btn ghost sm" href="https://doi.org/10.1145/3774521.3774578">DOI</a></div>
+      </div>
+    </li>
 
-<hr>
+    <li class="item">
+      <div class="when"><time datetime="2025-12">Dec 2025</time><b>Update</b></div>
+      <div>
+        <h3>Finalist, NCIIPC Startup India AI Grand Challenge 2026</h3>
+        <p>My team was among the top 15 finalists selected to compete at IIT Delhi. Soya Chaap&gt;&gt;&gt;. Problem statement: anomaly detection in hyperspectral images.</p>
+      </div>
+    </li>
 
-<!-- ===================== TIMELINE ===================== -->
+    <li class="item">
+      <div class="when"><time datetime="2025-06">Jun 2025</time><b>Update</b></div>
+      <div>
+        <h3>Internship at the Centre for Brain Research, Indian Institute of Science Bangalore</h3>
+        <p>I studied the informativeness of EEG signals from patients with neurodegenerative diseases under the guidance of Dr. Neelam Sinha and Dr. Gopika Gopan K.</p>
+      </div>
+    </li>
 
-<h2>News</h2>
+    <li class="item">
+      <div class="when"><time datetime="2025-03">Mar 2025</time><b>Update</b></div>
+      <div>
+        <h3>AutoOEP, a multi-modal framework for online exam proctoring</h3>
+        <p>We built an online exam proctoring framework for our Artificial Intelligence course project.</p>
+        <p><b>Aryan Kashyap Naveen*</b>, Bhuvanesh Singla*, Raajan Wankhade*, Shreesha M, Ramu S, Ram Mohana Gudetti. Accepted to the T4E conference, CVPR CV4Edu Workshop (Non archival).</p>
+        <div class="links"><a class="btn ghost sm" href="https://arxiv.org/abs/2509.10887">Preprint</a></div>
+      </div>
+    </li>
 
-<dl>
+    <li class="item">
+      <div class="when"><time datetime="2024-04">Apr 2024</time><b>Update</b></div>
+      <div>
+        <h3>Summer internship at the Healthcare Analytics and Language Engineering (HALE) Lab, NITK</h3>
+        <p>Under the guidance of Dr. Sowmya Kamath I developed CNN model ensembles for facial phenotyping of genetic disorders, covering both frequent and rare disorders.</p>
+      </div>
+    </li>
 
-  <dt><time datetime="2026-10">Oct 2026</time>(Update)</dt>
-  <dd>
-    <b>NSF travel award for ACM SIGSPATIAL 2026</b><br>
-    I'll be attending ACM SIGSPATIAL 2026 at Riverside, CA to present my work on GeoFM pre-training.
-  </dd>
-  <br>
+    <li class="item">
+      <div class="when"><time datetime="2023-12">Dec 2023</time><b>Project</b></div>
+      <div>
+        <h3>Built GraphLink, a graph theory based social media friend recommendation system</h3>
+        <p>We built a Django-based social platform with a user recommendation engine powered by graph theory and 0 ML. There are a bunch of cool features like real-time community detection, you can check it out at the link below. (We made this for our discrete math course project)</p>
+        <div class="links"><a class="btn ghost sm" href="https://kashyap05.pythonanywhere.com/">Live Site</a></div>
+      </div>
+    </li>
 
-  <dt><time datetime="2026-09">Sep 2026</time> (Update)</dt>
-  <dd>
-    <b>Started MS in CS at NYU Courant</b><br>
-      I'm continuing my research on world models for latent planning at CILVR lab NYU.
-      More specifically, I'm working on world models that predict in latent space and on regularization that keeps long planning rollouts reliable for model predictive control.
+    <li class="item">
+      <div class="when"><time datetime="2023-09">Sep 2023</time><b>Project</b></div>
+      <div>
+        <h3>Published mcfinance, a financial data extraction library</h3>
+        <p>We published a Python library to scrape, parse, and analyze the financial statements of Indian companies, it has over 10,000 downloads!</p>
+        <div class="links"><a class="btn ghost sm" href="https://pypi.org/project/mcfinance/">PyPI</a></div>
+      </div>
+    </li>
 
-  </dd>
-  <br>
+    <li class="item">
+      <div class="when"><time datetime="2022-11">Nov 2022</time><b>Update</b></div>
+      <div><h3>Started my B.Tech in Artificial Intelligence at NIT Karnataka, India</h3></div>
+    </li>
 
+  </ol>
 
-  <dt><time datetime="2026-05">May 2026</time> (Publication)</dt>
-  <dd>
-    <b>Paper accepted to ACM SIGSPATIAL 2026 (Research Track)!</b><br>
-    Our final year thesis "A Composition Aware Pretraining Framework for Geospatial Foundation Models" was accepted for publication. We built a pretraining framework for geospatial foundation models with a training objective that reconstructs the compositional makeup of satellite imagery (unlike other SOTA GeoFMs that are trained as masked autoencoders).
-    <b>Aryan Kashyap Naveen</b>, Abhishek Srinivas, Pranav Moothedath, Shrutilipi Bhattacharjee.
-    
-    <a href="https://arxiv.org/abs/2608.30817">arXiv</a> |
-    <a href="https://github.com/05kashyap/GFM_Composition_Pretraining">Code</a>
-  </dd>
-  <br>
+  <h2 class="sec">Outside research</h2>
+  <figure>
+    <img src="mc.png" alt="Aryan Kashyap Naveen's Minecraft base" width="1280" height="720" loading="lazy">
+    <figcaption>Proof of my super cool minecraft base (made with no cheats).</figcaption>
+  </figure>
 
-  <dt><time datetime="2026-05">May 2026</time> (Update)</dt>
-  <dd>
-    <b>I graduated from NITK Surathkal, India!!!</b><br>
-  </dd>
-  <br>
-  <dt><time datetime="2026-01">Jan 2026</time> (Update)</dt>
-  <dd>
-    <b>IndiaAI Fellowship</b><br>
-    I was awarded funding to build a satellite image object search tool and geospatial FM.
-    Project Title: "Fast and Efficient Satellite Image Search for Diverse Landcover Settings".
-  </dd>
-  <br>
-  <dt><time datetime="2025-12">Dec 2025</time> (Publication)</dt>
-  <dd>
-    <b>Paper presented at ICVGIP 2025</b><br>
-    Is the Spatial Structure as Important as Temporal Structure in EEG Signals?
-    <b>Aryan Kashyap Naveen</b>, Gopika Gopan K, Neelam Sinha.
-    16th Indian Conference on Computer Vision, Graphics and Image Processing, IIT Mandi. Poster at AAIC 2026.
-
-    <a href="https://doi.org/10.1145/3774521.3774578">DOI</a>
-  </dd>
-  <br>
-  <dt><time datetime="2025-12">Dec 2025</time> (Update)</dt>
-  <dd>
-    <b>Finalist, NCIIPC Startup India AI Grand Challenge 2026</b><br>
-    My team was among the top 15 finalists selected to compete at IIT Delhi. Soya Chaap>>>. Problem statement: anomaly detection in hyperspectral images.
-  </dd>
-  <br>
-  <dt><time datetime="2025-06">Jun 2025</time> (Update)</dt>
-  <dd>
-    <b>Internship at the Centre for Brain Research, Indian Institute of Science Bangalore</b><br>
-    I studied the informativeness of EEG signals from patients with neurodegenerative diseases under the guidance of Dr. Neelam Sinha and Dr. Gopika Gopan K. 
-  </dd>
-  <br>
-
-  <dt><time datetime="2025-03">Mar 2025</time> (Update)</dt>
-  <dd>
-    <b>AutoOEP, a multi-modal framework for online exam proctoring</b><br>
-    We built an online exam proctoring framework for our Artificial Intelligence course project.
-    <p><b>Aryan Kashyap Naveen*</b>, Bhuvanesh Singla*, Raajan Wankhade*, Shreesha M, Ramu S, Ram Mohana Gudetti.
-    Accepted to the T4E conference, CVPR CV4Edu Workshop (Non archival).
-    <a href="https://arxiv.org/abs/2509.10887">Preprint</a></p>
-  </dd>
-
-  <dt><time datetime="2024-04">Apr 2024</time> (Update)</dt>
-  <dd>
-    <b>Summer internship at the Healthcare Analytics and Language Engineering (HALE) Lab, NITK</b><br>
-    
-    Under the guidance of Dr. Sowmya Kamath I developed CNN model ensembles for facial phenotyping of genetic disorders, covering both frequent and rare disorders.</li>
-    
-  </dd>
-  <br>
-
-  <dt><time datetime="2023-12">Dec 2023</time> (Project Update)</dt>
-  <dd>
-    <b>Built GraphLink, a graph theory based social media friend recommendation system</b><br>
-    We built a Django-based social platform with a user recommendation engine powered by graph theory and 0 ML.
-    There are a bunch of cool features like real-time community detection, you can check it out at the link below. (We made this for our discrete math course project)
-     <a href="https://kashyap05.pythonanywhere.com/">Live Site</a>
-  </dd>
-  <br>
-
-  <!-- <dt><time datetime="2023-11">Nov 2023</time> (Update)</dt>
-  <dd>
-    <b>Member, Web Enthusiasts' Club NITK</b><br>
-    November 2023 to May 2026.
-    <ul>
-      <li>Ran sessions on CNNs and reinforcement learning for first- and second-year students.</li>
-      <li>Delivered a tech talk on Continuous Integration and Deployment.</li>
-    </ul>
-  </dd>
-  <br> -->
-
-  <dt><time datetime="2023-09">Sep 2023</time> (Project Update)</dt>
-  <dd>
-    <b>Published mcfinance, a financial data extraction library</b><br>
-    
-    We published a Python library to scrape, parse, and analyze the financial statements of Indian companies, it has over 10,000 downloads!
-    
-    <a href="https://pypi.org/project/mcfinance/">PyPI</a>
-  </dd>
-  <br>
-
-  <dt><time datetime="2022-11">Nov 2022</time> (Update)</dt>
-  <dd>
-    <b>Started my B.Tech in Artificial Intelligence at NIT Karnataka, India</b>
-  </dd>
-  <br>
-
-  <!-- <dt><time datetime="1900-01">Jan 1900</time> (Achievement)</dt>
-  <dd>
-    <b>e-Yantra Robotics Competition, IIT Bombay, 2023-24</b><br>
-    Qualified for Stage 2.
-    <ul>
-      <li>Built a Vanguard Bot that travels an arena to reach areas in distress.</li>
-      <li>Used an overhead camera, global imaging systems (GIS), and an ESP32 to build the robot and a watchtower, with image processing and Inception-ResNetv2 for event classification.</li>
-    </ul>
-  </dd>
-  <br> -->
-
-<!-- 
-  <dt><time datetime="2012-01">Jan 1900</time> (Achievement)</dt>
-  <dd>
-    <b>Ramsbottom Music Festival Rolling Shield</b><br>
-    Won for excellence in musical performance and interpretation.
-  </dd>
-
-</dl> -->
-<hr>
-
-<img src="mc.png" alt="Aryan Kashyap Naveen" width="300" height="200" align="centre" style="margin-left: 40px;">
-<p>Proof of my super cool minecraft base (made with no cheats).</p>
-
-<hr>
+  <footer>© 2026 Aryan Kashyap Naveen</footer>
+</main>
 </body>
 </html>
